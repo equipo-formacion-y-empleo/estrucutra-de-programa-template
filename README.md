@@ -23,6 +23,11 @@ Cada ejercicio está en su propia carpeta con un proyecto de C# independiente. P
 - **Exercise05d_Hypotenuse** - Cálculo de hipotenusa usando teorema de Pitágoras
 - **Exercise05e_BMI** - Calculadora de índice de masa corporal
 - **Exercise05f_Distance** - Cálculo de distancia entre dos puntos
+- **Exercise06a_IsEven** - Verificador de números pares
+- **Exercise06b_IsAdult** - Verificador de mayoría de edad
+- **Exercise06c_AreDifferent** - Verificador de números diferentes
+- **Exercise06d_IsNotNegative** - Verificador de números no negativos
+- **Exercise06e_EqualGroups** - Verificador de divisibilidad en grupos
 - **Exercise11_RestaurantBill** - Calculadora con impuestos y propinas
 - **Exercise12_CurrencyConverter** - Conversión de monedas con función reutilizable
 - **Exercise13_GeometricShapes** - Cálculos de áreas para múltiples figuras geométricas
