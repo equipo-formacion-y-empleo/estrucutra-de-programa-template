@@ -5,6 +5,10 @@
     "Exercise04_TypeConversions",
     "Exercise05a_TriangleArea",
     "Exercise05b_TemperatureConverter",
+    "Exercise05c_Average",
+    "Exercise05d_Hypotenuse",
+    "Exercise05e_BMI",
+    "Exercise05f_Distance",
     "Exercise11_RestaurantBill",
     "Exercise12_CurrencyConverter",
     "Exercise13_GeometricShapes"
@@ -74,6 +78,62 @@
       {
         "arguments": ["25"],
         "expectedOutputs": ["25,00°C", "77,00°F"]
+      }
+    ],
+    "Exercise05c_Average": [
+      {
+        "arguments": ["10", "20", "30"],
+        "expectedOutputs": ["Average: 20"]
+      },
+      {
+        "arguments": ["5", "15", "25"],
+        "expectedOutputs": ["Average: 15"]
+      },
+      {
+        "arguments": ["1", "2", "3"],
+        "expectedOutputs": ["Average: 2"]
+      }
+    ],
+    "Exercise05d_Hypotenuse": [
+      {
+        "arguments": ["3", "4"],
+        "expectedOutputs": ["Hypotenuse: 5"]
+      },
+      {
+        "arguments": ["5", "12"],
+        "expectedOutputs": ["Hypotenuse: 13"]
+      },
+      {
+        "arguments": ["8", "6"],
+        "expectedOutputs": ["Hypotenuse: 10"]
+      }
+    ],
+    "Exercise05e_BMI": [
+      {
+        "arguments": ["70", "1,75"],
+        "expectedOutputs": ["BMI: 22,86"]
+      },
+      {
+        "arguments": ["80", "1,80"],
+        "expectedOutputs": ["BMI: 24,69"]
+      },
+      {
+        "arguments": ["65", "1,70"],
+        "expectedOutputs": ["BMI: 22,49"]
+      }
+    ],
+    "Exercise05f_Distance": [
+      {
+        "arguments": ["0", "0", "3", "4"],
+        "expectedOutputs": ["Distance: 5"]
+      },
+      {
+        "arguments": ["1", "1", "4", "5"],
+        "expectedOutputs": ["Distance: 5"]
+      },
+      {
+        "arguments": ["0", "0", "6", "8"],
+        "expectedOutputs": ["Distance: 10"]
       }
     ],
     "Exercise11_RestaurantBill": [

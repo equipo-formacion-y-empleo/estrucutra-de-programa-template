@@ -19,6 +19,10 @@ Cada ejercicio está en su propia carpeta con un proyecto de C# independiente. P
 - **Exercise04_TypeConversions** - Conversiones de tipos implícitas y explícitas
 - **Exercise05a_TriangleArea** - Cálculos geométricos básicos
 - **Exercise05b_TemperatureConverter** - Conversión de temperaturas
+- **Exercise05c_Average** - Cálculo de promedio de tres números
+- **Exercise05d_Hypotenuse** - Cálculo de hipotenusa usando teorema de Pitágoras
+- **Exercise05e_BMI** - Calculadora de índice de masa corporal
+- **Exercise05f_Distance** - Cálculo de distancia entre dos puntos
 - **Exercise11_RestaurantBill** - Calculadora con impuestos y propinas
 - **Exercise12_CurrencyConverter** - Conversión de monedas con función reutilizable
 - **Exercise13_GeometricShapes** - Cálculos de áreas para múltiples figuras geométricas
