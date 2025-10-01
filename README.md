@@ -32,6 +32,7 @@ Cada ejercicio está en su propia carpeta con un proyecto de C# independiente. P
 - **Exercise07b_IsInRange** - Verificador de rango numérico
 - **Exercise07c_IsWorkingAge** - Verificador de edad laboral
 - **Exercise07d_IsLeapYear** - Verificador de año bisiesto
+- **Exercise08_BankingSimulator** - Funciones de operaciones bancarias secuenciales
 - **Exercise11_RestaurantBill** - Calculadora con impuestos y propinas
 - **Exercise12_CurrencyConverter** - Conversión de monedas con función reutilizable
 - **Exercise13_GeometricShapes** - Cálculos de áreas para múltiples figuras geométricas
