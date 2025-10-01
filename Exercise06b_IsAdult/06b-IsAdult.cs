@@ -5,4 +5,5 @@ bool IsAdult(int age)
 
 int age = int.Parse(args.Length > 0 ? args[0] : "20");
 
-Console.WriteLine($"¿Es {age} años adulto? {IsAdult(age)}");
+// Mostrar resultado
+Console.WriteLine($"¿Si tienes {age} años eres mayor de edad? {IsAdult(age)}");
