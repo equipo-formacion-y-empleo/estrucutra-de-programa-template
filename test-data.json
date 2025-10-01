@@ -258,7 +258,7 @@
     "Exercise07c_IsWorkingAge": [
       {
         "arguments": ["30"],
-        "expectedOutputs": ["¿Tiene 30 años para trabajar? True"]
+        "expectedOutputs": ["¿Con 30 años se puede trabajar? True"]
       },
       {
         "arguments": ["70"],
@@ -305,7 +305,7 @@
           "Después del retiro 1: 625,00",
           "Después del retiro 2: 610,00",
           "Después de intereses: 628,30",
-          "Saldo tras comisiones: 616,18"
+          "Saldo tras comisiones: 615,98"
         ]
       }
     ],
@@ -483,8 +483,8 @@
         "expectedOutputs": ["Fecha gregoriana: 1/1/2000", "Fecha juliana: 2451545"]
       },
       {
-        "arguments": ["15", "6", "1985"],
-        "expectedOutputs": ["Fecha gregoriana: 15/6/1985", "Fecha juliana: 2446220"]
+        "arguments": ["3", "6", "1985"],
+        "expectedOutputs": ["Fecha gregoriana: 3/6/1985", "Fecha juliana: 2446220"]
       },
       {
         "arguments": ["31", "12", "1999"],
@@ -498,7 +498,7 @@
       },
       {
         "arguments": ["2446220"],
-        "expectedOutputs": ["Fecha juliana: 2446220", "Fecha gregoriana: 15/6/1985"]
+        "expectedOutputs": ["Fecha juliana: 2446220", "Fecha gregoriana: 3/6/1985"]
       },
       {
         "arguments": ["2451544"],
