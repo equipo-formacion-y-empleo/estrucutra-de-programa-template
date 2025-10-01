@@ -1,20 +1,29 @@
-long CalculateJulianDate(int day, int month, int year)
+using System;
+
+(double area, double perimeter) EquilateralTriangle(double side)
 {
     throw new NotImplementedException();
 }
 
-(int day, int month, int year) JulianToGregorian(long julianDay)
+(double area, double perimeter) Square(double side)
 {
     throw new NotImplementedException();
 }
 
-int day = int.Parse(args.Length > 0 ? args[0] : "15");
-int month = int.Parse(args.Length > 1 ? args[1] : "10");
-int year = int.Parse(args.Length > 2 ? args[2] : "2024");
+(double area, double perimeter) RegularHexagon(double side)
+{
+    throw new NotImplementedException();
+}
 
-long julianDate = CalculateJulianDate(day, month, year);
-var (gregDay, gregMonth, gregYear) = JulianToGregorian(julianDate);
+// Obtener argumentos de línea de comandos
+double side = double.Parse(args.Length > 0 ? args[0] : "5,0");
 
-Console.WriteLine($"Fecha gregoriana: {day:D2}/{month:D2}/{year}");
-Console.WriteLine($"Fecha juliana: {julianDate}");
-Console.WriteLine($"Conversión inversa: {gregDay:D2}/{gregMonth:D2}/{gregYear}");
+// Calcular figuras
+var triangle = EquilateralTriangle(side);
+var square = Square(side);
+var hexagon = RegularHexagon(side);
+
+// Mostrar resultados
+Console.WriteLine($"Triángulo Equilátero: área = {triangle.area:F2}");
+Console.WriteLine($"Cuadrado: área = {square.area:F2}");
+Console.WriteLine($"Hexágono Regular: área = {hexagon.area:F2}");

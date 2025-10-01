@@ -1,4 +1,4 @@
-# Ejercicio 12: Calculadora de Cuenta de Restaurante
+# Ejercicio 11: Calculadora de Cuenta de Restaurante
 
 ## Descripción
 Crea un programa que calcule el total de una cuenta de restaurante, incluyendo impuestos y propina.

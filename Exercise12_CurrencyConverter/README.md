@@ -1,4 +1,4 @@
-# Ejercicio 13: Conversor de Monedas
+# Ejercicio 12: Conversor de Monedas
 
 ## Descripción
 Crea un programa que convierta una cantidad de dinero en euros a dólares, yenes y libras esterlinas.

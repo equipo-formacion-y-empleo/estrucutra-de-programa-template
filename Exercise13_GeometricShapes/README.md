@@ -1,4 +1,4 @@
-# Ejercicio 14: Figuras Geométricas
+# Ejercicio 13: Figuras Geométricas
 
 ## Descripción
 Crea un programa que calcule el área de diferentes figuras geométricas regulares.

@@ -1,15 +1,18 @@
-const double EUR_TO_USD = 1.09;
-const double EUR_TO_JPY = 163.5;
-const double EUR_TO_GBP = 0.86;
+using System;
 
-(double usd, double jpy, double gbp) ConvertCurrencies(double euros)
+double CalculateRestaurantBill(double subtotal, double taxPercentage, double tipPercentage, int numberOfDiners)
 {
     throw new NotImplementedException();
 }
 
-double euros = double.Parse(args.Length > 0 ? args[0] : "100,0");
-var (usd, jpy, gbp) = ConvertCurrencies(euros);
+// Obtener argumentos de línea de comandos
+double subtotal = double.Parse(args.Length > 0 ? args[0] : "100,0");
+double taxPercentage = double.Parse(args.Length > 1 ? args[1] : "0,21");
+double tipPercentage = double.Parse(args.Length > 2 ? args[2] : "0,15");
+int numberOfDiners = int.Parse(args.Length > 3 ? args[3] : "4");
 
-Console.WriteLine($"€{euros:F2} = ${usd:F2} USD");
-Console.WriteLine($"€{euros:F2} = ¥{jpy:F2} JPY");
-Console.WriteLine($"€{euros:F2} = £{gbp:F2} GBP");
+// Calcular total por persona
+double totalPerPerson = CalculateRestaurantBill(subtotal, taxPercentage, tipPercentage, numberOfDiners);
+
+// Mostrar resultado
+Console.WriteLine($"Total por persona: €{totalPerPerson:F2}");

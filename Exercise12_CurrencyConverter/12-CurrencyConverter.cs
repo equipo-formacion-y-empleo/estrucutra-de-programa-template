@@ -1,24 +1,21 @@
-(double area, double perimeter) EquilateralTriangle(double side)
+using System;
+
+const double EUR_TO_USD = 1.09;
+const double EUR_TO_JPY = 163.5;
+const double EUR_TO_GBP = 0.86;
+
+(double usd, double jpy, double gbp) ConvertCurrencies(double euros)
 {
     throw new NotImplementedException();
 }
 
-(double area, double perimeter) Square(double side)
-{
-    throw new NotImplementedException();
-}
+// Obtener argumentos de línea de comandos
+double euros = double.Parse(args.Length > 0 ? args[0] : "100,0");
 
-(double area, double perimeter) RegularHexagon(double side)
-{
-    throw new NotImplementedException();
-}
+// Convertir monedas
+var (usd, jpy, gbp) = ConvertCurrencies(euros);
 
-double side = double.Parse(args.Length > 0 ? args[0] : "5,0");
-
-var triangle = EquilateralTriangle(side);
-var square = Square(side);
-var hexagon = RegularHexagon(side);
-
-Console.WriteLine($"Triángulo Equilátero: área = {triangle.area:F2}, perímetro = {triangle.perimeter:F2}");
-Console.WriteLine($"Cuadrado: área = {square.area:F2}, perímetro = {square.perimeter:F2}");
-Console.WriteLine($"Hexágono Regular: área = {hexagon.area:F2}, perímetro = {hexagon.perimeter:F2}");
+// Mostrar resultados
+Console.WriteLine($"€{euros:F2} = ${usd:F2} USD");
+Console.WriteLine($"€{euros:F2} = ¥{jpy:F2} JPY");
+Console.WriteLine($"€{euros:F2} = £{gbp:F2} GBP");
