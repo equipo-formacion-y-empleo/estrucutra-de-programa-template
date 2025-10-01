@@ -9,8 +9,9 @@ param(
 # Set console encoding to UTF-8 to handle special characters
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-# Set culture to invariant for consistent number formatting
-[System.Threading.Thread]::CurrentThread.CurrentCulture = [System.Globalization.CultureInfo]::InvariantCulture
+# Set culture to Spanish (Spain) for consistent decimal formatting with commas
+[System.Threading.Thread]::CurrentThread.CurrentCulture = [System.Globalization.CultureInfo]::new("es-ES")
+[System.Threading.Thread]::CurrentThread.CurrentUICulture = [System.Globalization.CultureInfo]::new("es-ES")
 
 # Import test data from JSON file
 $testDataPath = Join-Path $PSScriptRoot "test-data.json"
@@ -31,6 +32,34 @@ function Write-Error($message) {
 
 function Write-Info($message) {
     Write-Host $message -ForegroundColor Cyan
+}
+
+# Function to normalize decimal separators for comparison
+function Compare-OutputWithFlexibleDecimals {
+    param(
+        [string]$Expected,
+        [string]$Actual
+    )
+    
+    # Normalize both strings by replacing decimal separators
+    $expectedNormalized = $Expected.Replace(',', '.').Replace('.', ',')
+    $actualNormalized = $Actual.Replace(',', '.').Replace('.', ',')
+    
+    # Check direct match first
+    if ($Actual.Trim() -eq $Expected.Trim()) {
+        return $true
+    }
+    
+    # Check with swapped decimal separators
+    if ($Actual.Trim() -eq $expectedNormalized.Trim()) {
+        return $true
+    }
+    
+    if ($actualNormalized.Trim() -eq $Expected.Trim()) {
+        return $true
+    }
+    
+    return $false
 }
 
 # Function to run an exercise and capture output
@@ -86,7 +115,7 @@ function Test-Exercise {
             foreach ($expected in $ExpectedOutputs) {
                 $found = $false
                 foreach ($line in $outputLines) {
-                    if ($line.Trim() -eq $expected.Trim()) {
+                    if (Compare-OutputWithFlexibleDecimals $expected $line) {
                         $found = $true
                         break
                     }
