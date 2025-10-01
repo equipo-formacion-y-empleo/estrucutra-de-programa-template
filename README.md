@@ -19,9 +19,9 @@ Cada ejercicio está en su propia carpeta con un proyecto de C# independiente. P
 - **Exercise04_TypeConversions** - Conversiones de tipos implícitas y explícitas
 - **Exercise05a_TriangleArea** - Cálculos geométricos básicos
 - **Exercise05b_TemperatureConverter** - Conversión de temperaturas
-- **Exercise12_RestaurantBill** - Calculadora con impuestos y propinas
-- **Exercise13_CurrencyConverter** - Conversión de monedas con función reutilizable
-- **Exercise14_GeometricShapes** - Cálculos de áreas para múltiples figuras geométricas
+- **Exercise11_RestaurantBill** - Calculadora con impuestos y propinas
+- **Exercise12_CurrencyConverter** - Conversión de monedas con función reutilizable
+- **Exercise13_GeometricShapes** - Cálculos de áreas para múltiples figuras geométricas
 
 ## Cómo Ejecutar
 

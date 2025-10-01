@@ -5,9 +5,9 @@
     "Exercise04_TypeConversions",
     "Exercise05a_TriangleArea",
     "Exercise05b_TemperatureConverter",
-    "Exercise12_RestaurantBill",
-    "Exercise13_CurrencyConverter",
-    "Exercise14_GeometricShapes"
+    "Exercise11_RestaurantBill",
+    "Exercise12_CurrencyConverter",
+    "Exercise13_GeometricShapes"
   ],
   "testCases": {
     "Exercise01_HelloWorld": [
@@ -76,7 +76,7 @@
         "expectedOutputs": ["25,00°C", "77,00°F"]
       }
     ],
-    "Exercise12_RestaurantBill": [
+    "Exercise11_RestaurantBill": [
       {
         "arguments": ["100,0", "0,21", "0,15", "4"],
         "expectedOutputs": ["Total por persona: €34,00"]
@@ -90,7 +90,7 @@
         "expectedOutputs": ["Total por persona: €32,75"]
       }
     ],
-    "Exercise13_CurrencyConverter": [
+    "Exercise12_CurrencyConverter": [
       {
         "arguments": ["50,0"],
         "expectedOutputs": ["€50,00 = $54,50 USD", "€50,00 = ¥8175,00 JPY", "€50,00 = £43,00 GBP"]
@@ -104,7 +104,7 @@
         "expectedOutputs": ["€75,00 = $81,75 USD", "€75,00 = ¥12262,50 JPY", "€75,00 = £64,50 GBP"]
       }
     ],
-    "Exercise14_GeometricShapes": [
+    "Exercise13_GeometricShapes": [
       {
         "arguments": ["10,0"],
         "expectedOutputs": ["Triángulo Equilátero: área = 43,30", "Cuadrado: área = 100,00", "Hexágono Regular: área = 259,81"]
