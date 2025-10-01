@@ -1,0 +1,22 @@
+name: Autograding
+
+on:
+  push
+
+jobs:
+  autograding:
+    runs-on: windows-latest
+    timeout-minutes: 10
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Run autograding tests
+      shell: pwsh
+      run: |
+        ./Test-Exercises.ps1 -Verbose

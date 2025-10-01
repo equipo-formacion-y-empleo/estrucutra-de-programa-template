@@ -1,0 +1,137 @@
+{
+  "exercises": [
+    "Exercise01_HelloWorld",
+    "Exercise02_VariablesScope", 
+    "Exercise03_BasicDataTypes",
+    "Exercise04_TypeConversions",
+    "Exercise05a_TriangleArea",
+    "Exercise05b_TemperatureConverter",
+    "Exercise12_RestaurantBill",
+    "Exercise13_CurrencyConverter",
+    "Exercise14_GeometricShapes"
+  ],
+  "testCases": {
+    "Exercise01_HelloWorld": [
+      {
+        "arguments": ["María", "Carlos"],
+        "expectedOutputs": ["Hello, María!", "Hello, Carlos!"]
+      },
+      {
+        "arguments": ["Ana"],
+        "expectedOutputs": ["Hello, Ana!", "Hello, Nombre2"]
+      }
+    ],
+    "Exercise02_VariablesScope": [
+      {
+        "arguments": ["4.0", "6.0", "5.0", "7.0"],
+        "expectedOutputs": ["Suma total de superficies: 59"]
+      },
+      {
+        "arguments": ["2.5", "3.5", "4.5", "5.5"],
+        "expectedOutputs": ["Suma total de superficies: 33.5"]
+      },
+      {
+        "arguments": ["1.0", "1.0", "2.0", "2.0"],
+        "expectedOutputs": ["Suma total de superficies: 5"]
+      }
+    ],
+    "Exercise03_BasicDataTypes": [
+      {
+        "arguments": ["100", "2.5", "3.141592653", "Mi texto", "false"],
+        "expectedOutputs": ["Valor int: 100", "Valor float: 2.5", "Valor double: 3.141592653", "Valor string: Mi texto", "Valor bool: False"]
+      },
+      {
+        "arguments": ["42", "1.5", "2.718", "Hola", "true"],
+        "expectedOutputs": ["Valor int: 42", "Valor float: 1.5", "Valor double: 2.718", "Valor string: Hola", "Valor bool: True"]
+      },
+      {
+        "arguments": ["-10", "0.0", "1.0", "Test", "false"],
+        "expectedOutputs": ["Valor int: -10", "Valor float: 0", "Valor double: 1", "Valor string: Test", "Valor bool: False"]
+      }
+    ],
+    "Exercise04_TypeConversions": [
+      {
+        "arguments": ["23.89", "17"],
+        "expectedOutputs": ["23.89", "23", "17.0"]
+      },
+      {
+        "arguments": ["45.67", "25"],
+        "expectedOutputs": ["45.67", "45", "25.0"]
+      },
+      {
+        "arguments": ["100.99", "50"],
+        "expectedOutputs": ["100.99", "100", "50.0"]
+      }
+    ],
+    "Exercise05a_TriangleArea": [
+      {
+        "arguments": ["8.5", "3.2"],
+        "expectedOutputs": ["Área del triángulo: 13.60"]
+      },
+      {
+        "arguments": ["10.0", "5.0"],
+        "expectedOutputs": ["Área del triángulo: 25.00"]
+      },
+      {
+        "arguments": ["6.0", "4.0"],
+        "expectedOutputs": ["Área del triángulo: 12.00"]
+      }
+    ],
+    "Exercise05b_TemperatureConverter": [
+      {
+        "arguments": ["0"],
+        "expectedOutputs": ["0.00°C", "32.00°F"]
+      },
+      {
+        "arguments": ["100"],
+        "expectedOutputs": ["100.00°C", "212.00°F"]
+      },
+      {
+        "arguments": ["25"],
+        "expectedOutputs": ["25.00°C", "77.00°F"]
+      }
+    ],
+    "Exercise12_RestaurantBill": [
+      {
+        "arguments": ["100.0", "0.21", "0.15", "4"],
+        "expectedOutputs": ["Subtotal: €100.00", "Total: €136.00", "Total por persona: €34.00"]
+      },
+      {
+        "arguments": ["80.0", "0.18", "0.20", "2"],
+        "expectedOutputs": ["Subtotal: €80.00", "Total: €110.40", "Total por persona: €55.20"]
+      },
+      {
+        "arguments": ["150.0", "0.21", "0.10", "6"],
+        "expectedOutputs": ["Subtotal: €150.00", "Total: €196.50", "Total por persona: €32.75"]
+      }
+    ],
+    "Exercise13_CurrencyConverter": [
+      {
+        "arguments": ["50.0"],
+        "expectedOutputs": ["€50.00 = $54.50 USD", "€50.00 = ¥8175.00 JPY", "€50.00 = £43.00 GBP"]
+      },
+      {
+        "arguments": ["200.0"],
+        "expectedOutputs": ["€200.00 = $218.00 USD", "€200.00 = ¥32700.00 JPY", "€200.00 = £172.00 GBP"]
+      },
+      {
+        "arguments": ["75.0"],
+        "expectedOutputs": ["€75.00 = $81.75 USD", "€75.00 = ¥12262.50 JPY", "€75.00 = £64.50 GBP"]
+      }
+    ],
+    "Exercise14_GeometricShapes": [
+      {
+        "arguments": ["10.0"],
+        "expectedOutputs": ["lado = 10.00"]
+      },
+      {
+        "arguments": ["5.0"],
+        "expectedOutputs": ["lado = 5.00"]
+      },
+      {
+        "arguments": ["15.0"],
+        "expectedOutputs": ["lado = 15.00"]
+      }
+    ]
+  }
+}
