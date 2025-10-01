@@ -19,6 +19,11 @@
     "Exercise07c_IsWorkingAge",
     "Exercise07d_IsLeapYear",
     "Exercise08_BankingSimulator",
+    "Exercise09a_IsEvenBits",
+    "Exercise09b_SwapWithoutTemp",
+    "Exercise09c_IsPowerOfTwo",
+    "Exercise09d_MultiplyByFour",
+    "Exercise09e_DivideBy16",
     "Exercise11_RestaurantBill",
     "Exercise12_CurrencyConverter",
     "Exercise13_GeometricShapes"
@@ -296,6 +301,76 @@
           "Después de intereses: 628,30",
           "Saldo tras comisiones: 616,18"
         ]
+      }
+    ],
+    "Exercise09a_IsEvenBits": [
+      {
+        "arguments": ["8"],
+        "expectedOutputs": ["¿Es 8 par usando bits?: True"]
+      },
+      {
+        "arguments": ["7"],
+        "expectedOutputs": ["¿Es 7 par usando bits?: False"]
+      },
+      {
+        "arguments": ["0"],
+        "expectedOutputs": ["¿Es 0 par usando bits?: True"]
+      }
+    ],
+    "Exercise09b_SwapWithoutTemp": [
+      {
+        "arguments": ["5", "3"],
+        "expectedOutputs": ["Antes: a=5, b=3", "Después: a=3, b=5"]
+      },
+      {
+        "arguments": ["10", "20"],
+        "expectedOutputs": ["Antes: a=10, b=20", "Después: a=20, b=10"]
+      },
+      {
+        "arguments": ["1", "100"],
+        "expectedOutputs": ["Antes: a=1, b=100", "Después: a=100, b=1"]
+      }
+    ],
+    "Exercise09c_IsPowerOfTwo": [
+      {
+        "arguments": ["8"],
+        "expectedOutputs": ["¿Es 8 potencia de dos?: True"]
+      },
+      {
+        "arguments": ["6"],
+        "expectedOutputs": ["¿Es 6 potencia de dos?: False"]
+      },
+      {
+        "arguments": ["16"],
+        "expectedOutputs": ["¿Es 16 potencia de dos?: True"]
+      }
+    ],
+    "Exercise09d_MultiplyByFour": [
+      {
+        "arguments": ["7"],
+        "expectedOutputs": ["7 multiplicado por 4 usando bits: 28"]
+      },
+      {
+        "arguments": ["5"],
+        "expectedOutputs": ["5 multiplicado por 4 usando bits: 20"]
+      },
+      {
+        "arguments": ["10"],
+        "expectedOutputs": ["10 multiplicado por 4 usando bits: 40"]
+      }
+    ],
+    "Exercise09e_DivideBy16": [
+      {
+        "arguments": ["64"],
+        "expectedOutputs": ["64 dividido por 16 usando bits: 4"]
+      },
+      {
+        "arguments": ["32"],
+        "expectedOutputs": ["32 dividido por 16 usando bits: 2"]
+      },
+      {
+        "arguments": ["80"],
+        "expectedOutputs": ["80 dividido por 16 usando bits: 5"]
       }
     ],
     "Exercise11_RestaurantBill": [
