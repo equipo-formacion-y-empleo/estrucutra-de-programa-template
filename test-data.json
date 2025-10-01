@@ -24,9 +24,15 @@
     "Exercise09c_IsPowerOfTwo",
     "Exercise09d_MultiplyByFour",
     "Exercise09e_DivideBy16",
+    "Exercise10a_Between10And20OrEven",
+    "Exercise10b_ThirdBitActiveAndPositive",
+    "Exercise10c_MultipleOf3Or5AndGreaterThan50",
+    "Exercise10d_EvenAndAbsLessThan100",
     "Exercise11_RestaurantBill",
     "Exercise12_CurrencyConverter",
-    "Exercise13_GeometricShapes"
+    "Exercise13_GeometricShapes",
+    "Exercise14a_CalculateJulianDate",
+    "Exercise14b_JulianToGregorian"
   ],
   "testCases": {
     "Exercise01_HelloWorld": [
@@ -373,6 +379,62 @@
         "expectedOutputs": ["80 dividido por 16 usando bits: 5"]
       }
     ],
+    "Exercise10a_Between10And20OrEven": [
+      {
+        "arguments": ["15"],
+        "expectedOutputs": ["¿15 está entre 10-20 o es par?: True"]
+      },
+      {
+        "arguments": ["8"],
+        "expectedOutputs": ["¿8 está entre 10-20 o es par?: True"]
+      },
+      {
+        "arguments": ["25"],
+        "expectedOutputs": ["¿25 está entre 10-20 o es par?: False"]
+      }
+    ],
+    "Exercise10b_ThirdBitActiveAndPositive": [
+      {
+        "arguments": ["5"],
+        "expectedOutputs": ["¿5 tiene el tercer bit activo y es positivo?: True"]
+      },
+      {
+        "arguments": ["3"],
+        "expectedOutputs": ["¿3 tiene el tercer bit activo y es positivo?: False"]
+      },
+      {
+        "arguments": ["-4"],
+        "expectedOutputs": ["¿-4 tiene el tercer bit activo y es positivo?: False"]
+      }
+    ],
+    "Exercise10c_MultipleOf3Or5AndGreaterThan50": [
+      {
+        "arguments": ["55"],
+        "expectedOutputs": ["¿55 es múltiplo de 3 o (5 y >50)?: True"]
+      },
+      {
+        "arguments": ["9"],
+        "expectedOutputs": ["¿9 es múltiplo de 3 o (5 y >50)?: True"]
+      },
+      {
+        "arguments": ["25"],
+        "expectedOutputs": ["¿25 es múltiplo de 3 o (5 y >50)?: False"]
+      }
+    ],
+    "Exercise10d_EvenAndAbsLessThan100": [
+      {
+        "arguments": ["50"],
+        "expectedOutputs": ["¿50 es par y |valor| < 100?: True"]
+      },
+      {
+        "arguments": ["-120"],
+        "expectedOutputs": ["¿-120 es par y |valor| < 100?: False"]
+      },
+      {
+        "arguments": ["99"],
+        "expectedOutputs": ["¿99 es par y |valor| < 100?: False"]
+      }
+    ],
     "Exercise11_RestaurantBill": [
       {
         "arguments": ["100,0", "0,21", "0,15", "4"],
@@ -413,6 +475,34 @@
       {
         "arguments": ["15,0"],
         "expectedOutputs": ["Triángulo Equilátero: área = 97,43", "Cuadrado: área = 225,00", "Hexágono Regular: área = 584,57"]
+      }
+    ],
+    "Exercise14a_CalculateJulianDate": [
+      {
+        "arguments": ["1", "1", "2000"],
+        "expectedOutputs": ["Fecha gregoriana: 1/1/2000", "Fecha juliana: 2451545"]
+      },
+      {
+        "arguments": ["15", "6", "1985"],
+        "expectedOutputs": ["Fecha gregoriana: 15/6/1985", "Fecha juliana: 2446220"]
+      },
+      {
+        "arguments": ["31", "12", "1999"],
+        "expectedOutputs": ["Fecha gregoriana: 31/12/1999", "Fecha juliana: 2451544"]
+      }
+    ],
+    "Exercise14b_JulianToGregorian": [
+      {
+        "arguments": ["2451545"],
+        "expectedOutputs": ["Fecha juliana: 2451545", "Fecha gregoriana: 1/1/2000"]
+      },
+      {
+        "arguments": ["2446220"],
+        "expectedOutputs": ["Fecha juliana: 2446220", "Fecha gregoriana: 15/6/1985"]
+      },
+      {
+        "arguments": ["2451544"],
+        "expectedOutputs": ["Fecha juliana: 2451544", "Fecha gregoriana: 31/12/1999"]
       }
     ]
   }
