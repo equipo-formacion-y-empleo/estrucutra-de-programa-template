@@ -13,8 +13,8 @@ double CalculateHexagonArea()
     throw new NotImplementedException();
 }
 
-double side = double.Parse(args.Length > 0 ? args[0] : "10.0");
+double side = double.Parse(args.Length > 0 ? args[0] : "10,0");
 
-Console.WriteLine($"Triángulo Equilátero: lado = {side:F2}, área = {CalculateTriangleArea():F2}");
-Console.WriteLine($"Cuadrado: lado = {side:F2}, área = {CalculateSquareArea():F2}");
-Console.WriteLine($"Hexágono Regular: lado = {side:F2}, área = {CalculateHexagonArea():F2}");
+Console.WriteLine($"Triángulo Equilátero: área = {CalculateTriangleArea():F2}");
+Console.WriteLine($"Cuadrado: área = {CalculateSquareArea():F2}");
+Console.WriteLine($"Hexágono Regular: área = {CalculateHexagonArea():F2}");

@@ -6,6 +6,12 @@ param(
     [switch]$Verbose = $false
 )
 
+# Set console encoding to UTF-8 to handle special characters
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
+# Set culture to invariant for consistent number formatting
+[System.Threading.Thread]::CurrentThread.CurrentCulture = [System.Globalization.CultureInfo]::InvariantCulture
+
 # Import test data from JSON file
 $testDataPath = Join-Path $PSScriptRoot "test-data.json"
 $testData = Get-Content $testDataPath -Raw | ConvertFrom-Json
@@ -59,7 +65,11 @@ function Test-Exercise {
         $csprojFile = $csprojFiles[0]
         
         # Run the project 
-        $output = dotnet run --project $csprojFile --nologo -- @Arguments 2>&1
+        if ($Arguments.Count -gt 0) {
+            $output = & dotnet run --project $csprojFile -- @Arguments 2>&1
+        } else {
+            $output = & dotnet run --project $csprojFile 2>&1
+        }
 
         if ($LASTEXITCODE -ne 0) {
             Write-Error "Runtime error in $ExerciseName"
@@ -72,9 +82,21 @@ function Test-Exercise {
         # Check expected outputs
         $success = $true
         if ($ExpectedOutputs.Count -gt 0) {
+            $outputLines = ($output -split "`r?`n" | Where-Object { $_.Trim() -ne "" })
             foreach ($expected in $ExpectedOutputs) {
-                if ($output -notmatch [regex]::Escape($expected)) {
+                $found = $false
+                foreach ($line in $outputLines) {
+                    if ($line.Trim() -eq $expected.Trim()) {
+                        $found = $true
+                        break
+                    }
+                }
+                if (-not $found) {
                     Write-Error "Expected output not found in $ExerciseName`: '$expected'"
+                    Write-Host "Actual output lines:" -ForegroundColor Yellow
+                    foreach ($line in $outputLines) {
+                        Write-Host "  '$line'" -ForegroundColor Gray
+                    }
                     $success = $false
                 }
             }
