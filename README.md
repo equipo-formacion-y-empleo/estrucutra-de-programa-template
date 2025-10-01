@@ -28,6 +28,10 @@ Cada ejercicio está en su propia carpeta con un proyecto de C# independiente. P
 - **Exercise06c_AreDifferent** - Verificador de números diferentes
 - **Exercise06d_IsNotNegative** - Verificador de números no negativos
 - **Exercise06e_EqualGroups** - Verificador de divisibilidad en grupos
+- **Exercise07a_CanDrive** - Verificador de permiso para conducir
+- **Exercise07b_IsInRange** - Verificador de rango numérico
+- **Exercise07c_IsWorkingAge** - Verificador de edad laboral
+- **Exercise07d_IsLeapYear** - Verificador de año bisiesto
 - **Exercise11_RestaurantBill** - Calculadora con impuestos y propinas
 - **Exercise12_CurrencyConverter** - Conversión de monedas con función reutilizable
 - **Exercise13_GeometricShapes** - Cálculos de áreas para múltiples figuras geométricas

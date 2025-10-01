@@ -14,6 +14,10 @@
     "Exercise06c_AreDifferent",
     "Exercise06d_IsNotNegative",
     "Exercise06e_EqualGroups",
+    "Exercise07a_CanDrive",
+    "Exercise07b_IsInRange",
+    "Exercise07c_IsWorkingAge",
+    "Exercise07d_IsLeapYear",
     "Exercise11_RestaurantBill",
     "Exercise12_CurrencyConverter",
     "Exercise13_GeometricShapes"
@@ -209,6 +213,62 @@
       {
         "arguments": ["15", "3"],
         "expectedOutputs": ["¿15 se puede dividir en grupos de 3? True"]
+      }
+    ],
+    "Exercise07a_CanDrive": [
+      {
+        "arguments": ["20", "true"],
+        "expectedOutputs": ["¿Puede conducir (20, True)? True"]
+      },
+      {
+        "arguments": ["16", "true"],
+        "expectedOutputs": ["¿Puede conducir (16, True)? False"]
+      },
+      {
+        "arguments": ["25", "false"],
+        "expectedOutputs": ["¿Puede conducir (25, False)? False"]
+      }
+    ],
+    "Exercise07b_IsInRange": [
+      {
+        "arguments": ["15", "10", "20"],
+        "expectedOutputs": ["¿Está 15 en el rango [10, 20]? True"]
+      },
+      {
+        "arguments": ["25", "10", "20"],
+        "expectedOutputs": ["¿Está 25 en el rango [10, 20]? False"]
+      },
+      {
+        "arguments": ["10", "10", "20"],
+        "expectedOutputs": ["¿Está 10 en el rango [10, 20]? True"]
+      }
+    ],
+    "Exercise07c_IsWorkingAge": [
+      {
+        "arguments": ["30"],
+        "expectedOutputs": ["¿Está 30 años en edad de trabajar? True"]
+      },
+      {
+        "arguments": ["70"],
+        "expectedOutputs": ["¿Está 70 años en edad de trabajar? False"]
+      },
+      {
+        "arguments": ["16"],
+        "expectedOutputs": ["¿Está 16 años en edad de trabajar? True"]
+      }
+    ],
+    "Exercise07d_IsLeapYear": [
+      {
+        "arguments": ["2024"],
+        "expectedOutputs": ["¿Es 2024 un año bisiesto? True"]
+      },
+      {
+        "arguments": ["1900"],
+        "expectedOutputs": ["¿Es 1900 un año bisiesto? False"]
+      },
+      {
+        "arguments": ["2000"],
+        "expectedOutputs": ["¿Es 2000 un año bisiesto? True"]
       }
     ],
     "Exercise11_RestaurantBill": [
