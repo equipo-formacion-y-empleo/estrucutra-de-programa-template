@@ -21,7 +21,7 @@ dotnet run 15,5
 ```
 **Salida esperada:**
 ```
-¿15,5 está entre 10-20 o es par?: True
+¿15,5 está entre 10-20 o es par? True
 ```
 
 ```powershell
@@ -29,5 +29,5 @@ dotnet run 8,0
 ```
 **Salida esperada:**
 ```
-¿8 está entre 10-20 o es par?: True
+¿8 está entre 10-20 o es par? True
 ```

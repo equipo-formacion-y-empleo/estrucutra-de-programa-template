@@ -4,7 +4,17 @@ const double EUR_TO_USD = 1.09;
 const double EUR_TO_JPY = 163.5;
 const double EUR_TO_GBP = 0.86;
 
-(double usd, double jpy, double gbp) ConvertCurrencies(double euros)
+double ConvertToUSD(double euros)
+{
+    throw new NotImplementedException();
+}
+
+double ConvertToJPY(double euros)
+{
+    throw new NotImplementedException();
+}
+
+double ConvertToGBP(double euros)
 {
     throw new NotImplementedException();
 }
@@ -13,7 +23,9 @@ const double EUR_TO_GBP = 0.86;
 double euros = double.Parse(args.Length > 0 ? args[0] : "100,0");
 
 // Convertir monedas
-var (usd, jpy, gbp) = ConvertCurrencies(euros);
+double usd = ConvertToUSD(euros);
+double jpy = ConvertToJPY(euros);
+double gbp = ConvertToGBP(euros);
 
 // Mostrar resultados
 Console.WriteLine($"€{euros:F2} = ${usd:F2} USD");

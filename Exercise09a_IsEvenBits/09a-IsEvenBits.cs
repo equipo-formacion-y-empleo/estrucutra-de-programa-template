@@ -12,4 +12,4 @@ int number = args.Length > 0 ? int.Parse(args[0]) : 8;
 bool result = IsEvenBits(number);
 
 // Mostrar resultado
-Console.WriteLine($"¿Es {number} par usando bits?: {result}");
+Console.WriteLine($"¿Es {number} par usando bits? {result}");

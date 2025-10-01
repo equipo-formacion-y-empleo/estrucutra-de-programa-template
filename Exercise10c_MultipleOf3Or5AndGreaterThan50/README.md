@@ -21,7 +21,7 @@ dotnet run 55
 ```
 **Salida esperada:**
 ```
-¿55 es múltiplo de 3 o (5 y >50)?: True
+¿55 es múltiplo de 3 o (5 y >50)? True
 ```
 
 ```powershell
@@ -29,5 +29,5 @@ dotnet run 9
 ```
 **Salida esperada:**
 ```
-¿9 es múltiplo de 3 o (5 y >50)?: True
+¿9 es múltiplo de 3 o (5 y >50)? True
 ```

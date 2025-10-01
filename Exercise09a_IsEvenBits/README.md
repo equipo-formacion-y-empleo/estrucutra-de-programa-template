@@ -20,7 +20,7 @@ dotnet run 8
 ```
 **Salida esperada:**
 ```
-¿Es 8 par usando bits?: True
+¿Es 8 par usando bits? True
 ```
 
 ```powershell
@@ -28,5 +28,5 @@ dotnet run 7
 ```
 **Salida esperada:**
 ```
-¿Es 7 par usando bits?: False
+¿Es 7 par usando bits? False
 ```

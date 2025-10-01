@@ -21,7 +21,7 @@ dotnet run 50,0
 ```
 **Salida esperada:**
 ```
-¿50 es par y |valor| < 100?: True
+¿50 es par y |valor| < 100? True
 ```
 
 ```powershell
@@ -29,5 +29,5 @@ dotnet run -120,5
 ```
 **Salida esperada:**
 ```
-¿-120,5 es par y |valor| < 100?: False
+¿-120,5 es par y |valor| < 100? False
 ```

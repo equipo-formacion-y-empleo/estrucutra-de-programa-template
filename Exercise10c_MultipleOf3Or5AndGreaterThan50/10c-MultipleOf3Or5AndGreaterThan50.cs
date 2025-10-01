@@ -12,4 +12,4 @@ int number = args.Length > 0 ? int.Parse(args[0]) : 55;
 bool result = MultipleOf3Or5AndGreaterThan50(number);
 
 // Mostrar resultado
-Console.WriteLine($"¿{number} es múltiplo de 3 o (5 y >50)?: {result}");
+Console.WriteLine($"¿{number} es múltiplo de 3 o (5 y >50)? {result}");

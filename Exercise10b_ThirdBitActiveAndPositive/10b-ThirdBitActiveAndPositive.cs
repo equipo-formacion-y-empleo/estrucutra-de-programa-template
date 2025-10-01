@@ -12,4 +12,4 @@ int number = args.Length > 0 ? int.Parse(args[0]) : 5;
 bool result = ThirdBitActiveAndPositive(number);
 
 // Mostrar resultado
-Console.WriteLine($"¿{number} tiene el tercer bit activo y es positivo?: {result}");
+Console.WriteLine($"¿{number} tiene el tercer bit activo y es positivo? {result}");

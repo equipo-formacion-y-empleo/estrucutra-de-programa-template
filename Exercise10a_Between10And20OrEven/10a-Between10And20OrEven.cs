@@ -12,4 +12,4 @@ double number = args.Length > 0 ? double.Parse(args[0]) : 15.0;
 bool result = Between10And20OrEven(number);
 
 // Mostrar resultado
-Console.WriteLine($"¿{number} está entre 10-20 o es par?: {result}");
+Console.WriteLine($"¿{number} está entre 10-20 o es par? {result}");

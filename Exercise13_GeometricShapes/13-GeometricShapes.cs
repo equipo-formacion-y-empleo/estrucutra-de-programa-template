@@ -1,16 +1,16 @@
 using System;
 
-(double area, double perimeter) EquilateralTriangle(double side)
+double CalculateTriangleArea(double side)
 {
     throw new NotImplementedException();
 }
 
-(double area, double perimeter) Square(double side)
+double CalculateSquareArea(double side)
 {
     throw new NotImplementedException();
 }
 
-(double area, double perimeter) RegularHexagon(double side)
+double CalculateHexagonArea(double side)
 {
     throw new NotImplementedException();
 }
@@ -19,11 +19,11 @@ using System;
 double side = double.Parse(args.Length > 0 ? args[0] : "5,0");
 
 // Calcular figuras
-var triangle = EquilateralTriangle(side);
-var square = Square(side);
-var hexagon = RegularHexagon(side);
+double triangleArea = CalculateTriangleArea(side);
+double squareArea = CalculateSquareArea(side);
+double hexagonArea = CalculateHexagonArea(side);
 
 // Mostrar resultados
-Console.WriteLine($"Triángulo Equilátero: área = {triangle.area:F2}");
-Console.WriteLine($"Cuadrado: área = {square.area:F2}");
-Console.WriteLine($"Hexágono Regular: área = {hexagon.area:F2}");
+Console.WriteLine($"Triángulo Equilátero: área = {triangleArea:F2}");
+Console.WriteLine($"Cuadrado: área = {squareArea:F2}");
+Console.WriteLine($"Hexágono Regular: área = {hexagonArea:F2}");

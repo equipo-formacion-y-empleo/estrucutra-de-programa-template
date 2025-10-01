@@ -174,15 +174,15 @@
     "Exercise06b_IsAdult": [
       {
         "arguments": ["20"],
-        "expectedOutputs": ["¿Es 20 años adulto? True"]
+        "expectedOutputs": ["¿Si tienes 20 años eres mayor de edad? True"]
       },
       {
         "arguments": ["16"],
-        "expectedOutputs": ["¿Es 16 años adulto? False"]
+        "expectedOutputs": ["¿Si tienes 16 años eres mayor de edad? False"]
       },
       {
         "arguments": ["18"],
-        "expectedOutputs": ["¿Es 18 años adulto? True"]
+        "expectedOutputs": ["¿Si tienes 18 años eres mayor de edad? True"]
       }
     ],
     "Exercise06c_AreDifferent": [
@@ -258,15 +258,15 @@
     "Exercise07c_IsWorkingAge": [
       {
         "arguments": ["30"],
-        "expectedOutputs": ["¿Está 30 años en edad de trabajar? True"]
+        "expectedOutputs": ["¿Tiene 30 años para trabajar? True"]
       },
       {
         "arguments": ["70"],
-        "expectedOutputs": ["¿Está 70 años en edad de trabajar? False"]
+        "expectedOutputs": ["¿Con 70 años se puede trabajar? False"]
       },
       {
         "arguments": ["16"],
-        "expectedOutputs": ["¿Está 16 años en edad de trabajar? True"]
+        "expectedOutputs": ["¿Con 16 años se puede trabajar? True"]
       }
     ],
     "Exercise07d_IsLeapYear": [
@@ -312,15 +312,15 @@
     "Exercise09a_IsEvenBits": [
       {
         "arguments": ["8"],
-        "expectedOutputs": ["¿Es 8 par usando bits?: True"]
+        "expectedOutputs": ["¿Es 8 par usando bits? True"]
       },
       {
         "arguments": ["7"],
-        "expectedOutputs": ["¿Es 7 par usando bits?: False"]
+        "expectedOutputs": ["¿Es 7 par usando bits? False"]
       },
       {
         "arguments": ["0"],
-        "expectedOutputs": ["¿Es 0 par usando bits?: True"]
+        "expectedOutputs": ["¿Es 0 par usando bits? True"]
       }
     ],
     "Exercise09b_SwapWithoutTemp": [
@@ -340,15 +340,15 @@
     "Exercise09c_IsPowerOfTwo": [
       {
         "arguments": ["8"],
-        "expectedOutputs": ["¿Es 8 potencia de dos?: True"]
+        "expectedOutputs": ["¿Es 8 potencia de dos? True"]
       },
       {
         "arguments": ["6"],
-        "expectedOutputs": ["¿Es 6 potencia de dos?: False"]
+        "expectedOutputs": ["¿Es 6 potencia de dos? False"]
       },
       {
         "arguments": ["16"],
-        "expectedOutputs": ["¿Es 16 potencia de dos?: True"]
+        "expectedOutputs": ["¿Es 16 potencia de dos? True"]
       }
     ],
     "Exercise09d_MultiplyByFour": [
@@ -382,57 +382,57 @@
     "Exercise10a_Between10And20OrEven": [
       {
         "arguments": ["15,5"],
-        "expectedOutputs": ["¿15,5 está entre 10-20 o es par?: True"]
+        "expectedOutputs": ["¿15,5 está entre 10-20 o es par? True"]
       },
       {
         "arguments": ["8,0"],
-        "expectedOutputs": ["¿8 está entre 10-20 o es par?: True"]
+        "expectedOutputs": ["¿8 está entre 10-20 o es par? True"]
       },
       {
         "arguments": ["25,3"],
-        "expectedOutputs": ["¿25,3 está entre 10-20 o es par?: False"]
+        "expectedOutputs": ["¿25,3 está entre 10-20 o es par? False"]
       }
     ],
     "Exercise10b_ThirdBitActiveAndPositive": [
       {
         "arguments": ["5"],
-        "expectedOutputs": ["¿5 tiene el tercer bit activo y es positivo?: True"]
+        "expectedOutputs": ["¿5 tiene el tercer bit activo y es positivo? True"]
       },
       {
         "arguments": ["3"],
-        "expectedOutputs": ["¿3 tiene el tercer bit activo y es positivo?: False"]
+        "expectedOutputs": ["¿3 tiene el tercer bit activo y es positivo? False"]
       },
       {
         "arguments": ["-4"],
-        "expectedOutputs": ["¿-4 tiene el tercer bit activo y es positivo?: False"]
+        "expectedOutputs": ["¿-4 tiene el tercer bit activo y es positivo? False"]
       }
     ],
     "Exercise10c_MultipleOf3Or5AndGreaterThan50": [
       {
         "arguments": ["55"],
-        "expectedOutputs": ["¿55 es múltiplo de 3 o (5 y >50)?: True"]
+        "expectedOutputs": ["¿55 es múltiplo de 3 o (5 y >50)? True"]
       },
       {
         "arguments": ["9"],
-        "expectedOutputs": ["¿9 es múltiplo de 3 o (5 y >50)?: True"]
+        "expectedOutputs": ["¿9 es múltiplo de 3 o (5 y >50)? True"]
       },
       {
         "arguments": ["25"],
-        "expectedOutputs": ["¿25 es múltiplo de 3 o (5 y >50)?: False"]
+        "expectedOutputs": ["¿25 es múltiplo de 3 o (5 y >50)? False"]
       }
     ],
     "Exercise10d_EvenAndAbsLessThan100": [
       {
         "arguments": ["50,0"],
-        "expectedOutputs": ["¿50 es par y |valor| < 100?: True"]
+        "expectedOutputs": ["¿50 es par y |valor| < 100? True"]
       },
       {
         "arguments": ["-120,5"],
-        "expectedOutputs": ["¿-120,5 es par y |valor| < 100?: False"]
+        "expectedOutputs": ["¿-120,5 es par y |valor| < 100? False"]
       },
       {
         "arguments": ["99,9"],
-        "expectedOutputs": ["¿99,9 es par y |valor| < 100?: False"]
+        "expectedOutputs": ["¿99,9 es par y |valor| < 100? False"]
       }
     ],
     "Exercise11_RestaurantBill": [

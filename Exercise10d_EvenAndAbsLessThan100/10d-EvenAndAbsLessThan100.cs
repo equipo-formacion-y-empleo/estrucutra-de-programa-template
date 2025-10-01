@@ -12,4 +12,4 @@ double number = args.Length > 0 ? double.Parse(args[0]) : 50.0;
 bool result = EvenAndAbsLessThan100(number);
 
 // Mostrar resultado
-Console.WriteLine($"¿{number} es par y |valor| < 100?: {result}");
+Console.WriteLine($"¿{number} es par y |valor| < 100? {result}");

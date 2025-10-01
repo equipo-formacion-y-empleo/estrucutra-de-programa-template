@@ -16,5 +16,5 @@ dotnet run 20
 ```
 **Salida esperada:**
 ```
-¿Es 20 años adulto? True
+¿Si tienes 20 años eres mayor de edad? True
 ```

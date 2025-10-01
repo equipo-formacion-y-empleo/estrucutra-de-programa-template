@@ -21,7 +21,7 @@ dotnet run 5
 ```
 **Salida esperada:**
 ```
-¿5 tiene el tercer bit activo y es positivo?: True
+¿5 tiene el tercer bit activo y es positivo? True
 ```
 
 ```powershell
@@ -29,5 +29,5 @@ dotnet run 3
 ```
 **Salida esperada:**
 ```
-¿3 tiene el tercer bit activo y es positivo?: False
+¿3 tiene el tercer bit activo y es positivo? False
 ```

@@ -12,4 +12,4 @@ int number = args.Length > 0 ? int.Parse(args[0]) : 8;
 bool result = IsPowerOfTwo(number);
 
 // Mostrar resultado
-Console.WriteLine($"¿Es {number} potencia de dos?: {result}");
+Console.WriteLine($"¿Es {number} potencia de dos? {result}");

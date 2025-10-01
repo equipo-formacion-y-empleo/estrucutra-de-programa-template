@@ -20,7 +20,7 @@ dotnet run 8
 ```
 **Salida esperada:**
 ```
-¿Es 8 potencia de dos?: True
+¿Es 8 potencia de dos? True
 ```
 
 ```powershell
@@ -28,5 +28,5 @@ dotnet run 6
 ```
 **Salida esperada:**
 ```
-¿Es 6 potencia de dos?: False
+¿Es 6 potencia de dos? False
 ```
