@@ -12,12 +12,12 @@ Implementa una función que verifique si un número es par y su valor absoluto e
 - **`EvenAndAbsLessThan100(number)`**: Retorna `true` si el número cumple las condiciones
 
 ## Argumentos de Línea de Comandos
-- **Posición 0**: Número a verificar (por defecto: 50)
+- **Posición 0**: Número a verificar (por defecto: 50,0)
 
 ## Ejemplo de Ejecución
 
 ```powershell
-dotnet run 50
+dotnet run 50,0
 ```
 **Salida esperada:**
 ```
@@ -25,9 +25,9 @@ dotnet run 50
 ```
 
 ```powershell
-dotnet run -120
+dotnet run -120,5
 ```
 **Salida esperada:**
 ```
-¿-120 es par y |valor| < 100?: False
+¿-120,5 es par y |valor| < 100?: False
 ```

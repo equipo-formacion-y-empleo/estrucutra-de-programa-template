@@ -381,16 +381,16 @@
     ],
     "Exercise10a_Between10And20OrEven": [
       {
-        "arguments": ["15"],
-        "expectedOutputs": ["¿15 está entre 10-20 o es par?: True"]
+        "arguments": ["15,5"],
+        "expectedOutputs": ["¿15,5 está entre 10-20 o es par?: True"]
       },
       {
-        "arguments": ["8"],
+        "arguments": ["8,0"],
         "expectedOutputs": ["¿8 está entre 10-20 o es par?: True"]
       },
       {
-        "arguments": ["25"],
-        "expectedOutputs": ["¿25 está entre 10-20 o es par?: False"]
+        "arguments": ["25,3"],
+        "expectedOutputs": ["¿25,3 está entre 10-20 o es par?: False"]
       }
     ],
     "Exercise10b_ThirdBitActiveAndPositive": [
@@ -423,16 +423,16 @@
     ],
     "Exercise10d_EvenAndAbsLessThan100": [
       {
-        "arguments": ["50"],
+        "arguments": ["50,0"],
         "expectedOutputs": ["¿50 es par y |valor| < 100?: True"]
       },
       {
-        "arguments": ["-120"],
-        "expectedOutputs": ["¿-120 es par y |valor| < 100?: False"]
+        "arguments": ["-120,5"],
+        "expectedOutputs": ["¿-120,5 es par y |valor| < 100?: False"]
       },
       {
-        "arguments": ["99"],
-        "expectedOutputs": ["¿99 es par y |valor| < 100?: False"]
+        "arguments": ["99,9"],
+        "expectedOutputs": ["¿99,9 es par y |valor| < 100?: False"]
       }
     ],
     "Exercise11_RestaurantBill": [

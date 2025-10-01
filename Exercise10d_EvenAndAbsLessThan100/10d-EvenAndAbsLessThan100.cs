@@ -1,12 +1,12 @@
 using System;
 
-bool EvenAndAbsLessThan100(int number)
+bool EvenAndAbsLessThan100(double number)
 {
     throw new NotImplementedException();
 }
 
 // Obtener argumentos de línea de comandos
-int number = args.Length > 0 ? int.Parse(args[0]) : 50;
+double number = args.Length > 0 ? double.Parse(args[0]) : 50.0;
 
 // Probar la función
 bool result = EvenAndAbsLessThan100(number);

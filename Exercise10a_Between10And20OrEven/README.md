@@ -12,20 +12,20 @@ Implementa una función que verifique si un número está entre 10 y 20 (exclusi
 - **`Between10And20OrEven(number)`**: Retorna `true` si el número cumple las condiciones
 
 ## Argumentos de Línea de Comandos
-- **Posición 0**: Número a verificar (por defecto: 15)
+- **Posición 0**: Número a verificar (por defecto: 15,0)
 
 ## Ejemplo de Ejecución
 
 ```powershell
-dotnet run 15
+dotnet run 15,5
 ```
 **Salida esperada:**
 ```
-¿15 está entre 10-20 o es par?: True
+¿15,5 está entre 10-20 o es par?: True
 ```
 
 ```powershell
-dotnet run 8
+dotnet run 8,0
 ```
 **Salida esperada:**
 ```
